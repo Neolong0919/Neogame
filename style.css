@@ -1,0 +1,18 @@
+/* 设置全屏布局，确保画布居中 */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB;
+  }
+  
+  /* 设置画布的样式 */
+  canvas {
+    display: block;
+    background-color: black;
+  }
+  

@@ -1,13 +1,56 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>农场小子的冒险</title>
-  <link rel="stylesheet" href="style.css">
+  <title>游戏 - 大便躲避</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    canvas {
+      background-color: #a7c7e7;
+      display: block;
+    }
+
+    button {
+      position: absolute;
+      padding: 10px 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    #startButton {
+      bottom: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    #restartButton {
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- 游戏控制按钮 -->
+  <button id="startButton">开始游戏</button>
+  <button id="restartButton">重新开始</button>
+
+  <!-- 游戏画布 -->
   <canvas id="gameCanvas"></canvas>
-  <script src="script.js"></script>
+
+  <script src="script.js"></script> <!-- 确保路径正确 -->
 </body>
 </html>
